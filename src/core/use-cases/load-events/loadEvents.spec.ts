@@ -1,7 +1,7 @@
 import { Action, Store, ThunkDispatch } from "@reduxjs/toolkit";
 import { loadEvents } from "./loadEventsThunk";
 import { configureRtkStore, IZoomGateway, RootState } from "../../../store/store";
-import { InMemoryZoomGateway } from '../../../adapters/secondary/InMemoryGateway';
+import { InMemoryZoomGateway } from '../../../adapters/secondary/InMemoryZoomGateway';
 
 describe('Load zoom events', () => {
 
