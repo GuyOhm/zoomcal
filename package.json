@@ -29,6 +29,13 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "jest": {
+    "globals": {
+        "ts-jest": {
+          "isolatedModules": false
+        }
+    }
+   },
   "browserslist": {
     "production": [
       ">0.2%",
