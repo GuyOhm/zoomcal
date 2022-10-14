@@ -1,9 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
+import { ZoomEvent } from './event';
 import { eventsSlice } from './slice';
 
 export interface IZoomGateway {
-  loadEvents: () => Promise<unknown[]>;
-  bookEvent: (event: unknown) => Promise<unknown>;
+  loadEvents: () => Promise<ZoomEvent[]>;
+  bookEvent: (event: ZoomEvent) => Promise<ZoomEvent>;
 }
 
 export const configureRtkStore = (gateway?: IZoomGateway) => configureStore({
